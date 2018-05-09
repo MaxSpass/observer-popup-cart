@@ -46,6 +46,7 @@
                 var w = callback();
                 w.done(function (content) {
                     returnTemplate(content);
+                    console.log('ajaxEmitation END');
                 });
             };
 

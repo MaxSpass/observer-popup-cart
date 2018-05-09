@@ -24,13 +24,9 @@
             console.log('ajaxEmitation START');
             var defer = $.Deferred();
             var template;
-            // var popupData = randomCheckoutData();
 
             setTimeout(function () {
-                // createTemplate(popupData);
-                // self.template = parseData(randomCheckoutData());
                 template = parseData(randomCheckoutData());
-                // console.log('self.template',self.template);
                 defer.resolve(template);
             }, 2000);
 
