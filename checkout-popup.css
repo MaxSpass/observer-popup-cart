@@ -47,18 +47,16 @@
 
 .popup__content {
     width: 100%;
+    max-width: 800px;
     cursor: auto;
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 auto;
     text-align: left;
-    z-index: 1045;
-
     background: #fff;
-    max-width: 800px;
     padding: 20px;
-    /*margin: 20px auto;*/
+    margin: 20px auto;
+    z-index: 1045;
 }
 
 .popup__close {
@@ -70,6 +68,10 @@
     background: red;
     cursor: pointer;
     float: right;
+}
+
+.popupClassTest {
+    background: blue !important;
 }
 /*Checkout Popup Content*/
 #checkoutInit {

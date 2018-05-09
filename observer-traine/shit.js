@@ -1,7 +1,14 @@
+var contentFromStaticFunction = function(){return parseData(randomCheckoutData())};
+
 var CheckoutPopup = new window.moyoNS.components.Popup({
-    contentAsync: true,
-    // contentStatic: '#popUpStaticContent',
-    localStorage: 'checkoutPopup'
+    contentStatic: '#popUpStaticContent',
+    // contentStatic: contentFromStaticFunction,
+    classes: {
+        popupBox: 'box-additional',
+        popupContent: 'content-additional',
+    },
+    // contentAsync: true,
+    // localStorage: 'checkoutPopup'
 });
 
 var CartPopup = new window.moyoNS.components.CartPopup();
@@ -12,12 +19,12 @@ $(document).on('click', '#checkoutInit', function(e){
     e.preventDefault();
     e.stopPropagation();
 
-    CheckoutPopup.create({
-        content: CartPopup.ajaxEmitation,
-        fromStorage: true
-    });
+    // CheckoutPopup.create({
+    //     content: CartPopup.ajaxEmitation,
+    //     fromStorage: true
+    // });
 
-    // Popup.buildContent();
+    CheckoutPopup.create();
 
     return false;
 });
@@ -25,8 +32,7 @@ $(document).on('click', '#checkoutInit', function(e){
 
 
 
-
-
+console.log('parseData(randomCheckoutData())', parseData(randomCheckoutData()));
 
 
 
@@ -68,29 +74,40 @@ function randomCheckoutData() {
                 img: 'https://img1.moyo.ua/img/products/3974/14_200x_1511173600.jpg',
                 href: 'java-script:void(0)',
             },
-            {
-                title: 'Название - ' + makeHash(20),
-                length: getRandom(2, 10),
-                price: getRandom(10000, 30000),
-                img: 'https://img1.moyo.ua/img/products/3974/14_200x_1511173600.jpg',
-                href: 'java-script:void(0)',
-            },
-            {
-                title: 'Название - ' + makeHash(20),
-                length: getRandom(2, 10),
-                price: getRandom(10000, 30000),
-                img: 'https://img1.moyo.ua/img/products/3974/14_200x_1511173600.jpg',
-                href: 'java-script:void(0)',
-            },
-            {
-                title: 'Название - ' + makeHash(20),
-                length: getRandom(2, 10),
-                price: getRandom(10000, 30000),
-                img: 'https://img1.moyo.ua/img/products/3974/14_200x_1511173600.jpg',
-                href: 'java-script:void(0)',
-            },
+            // {
+            //     title: 'Название - ' + makeHash(20),
+            //     length: getRandom(2, 10),
+            //     price: getRandom(10000, 30000),
+            //     img: 'https://img1.moyo.ua/img/products/3974/14_200x_1511173600.jpg',
+            //     href: 'java-script:void(0)',
+            // },
+            // {
+            //     title: 'Название - ' + makeHash(20),
+            //     length: getRandom(2, 10),
+            //     price: getRandom(10000, 30000),
+            //     img: 'https://img1.moyo.ua/img/products/3974/14_200x_1511173600.jpg',
+            //     href: 'java-script:void(0)',
+            // },
+            // {
+            //     title: 'Название - ' + makeHash(20),
+            //     length: getRandom(2, 10),
+            //     price: getRandom(10000, 30000),
+            //     img: 'https://img1.moyo.ua/img/products/3974/14_200x_1511173600.jpg',
+            //     href: 'java-script:void(0)',
+            // },
         ]
     };
 
     return data;
+}
+
+function parseData(data) {
+    var productsInfoMarkup = '';
+    data.products.forEach(function (el, i) {
+        productsInfoMarkup += '<h2>' + el.title + '</h2><h2>' + el.length + '</h2><h2>' + el.price + '</h2><h2>' + el.img + '</h2><h2>' + el.href + '</h2></br>';
+    });
+
+    // console.log('productsInfoMarkup', productsInfoMarkup);
+
+    return productsInfoMarkup;
 }
