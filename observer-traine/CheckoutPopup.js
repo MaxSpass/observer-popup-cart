@@ -27,19 +27,19 @@
             }
         };
 
-        function ajaxEmitation() {
-            console.log('ajaxEmitation START');
-            var promise = $.Deferred();
-            var popupData = randomCheckoutData();
-
-            setTimeout(function () {
-                createTemplate(popupData);
-                promise.resolve();
-                console.log('ajaxEmitation END');
-            }, 2000);
-
-            return promise.promise();
-        };
+        // function ajaxEmitation() {
+        //     console.log('ajaxEmitation START');
+        //     var promise = $.Deferred();
+        //     var popupData = randomCheckoutData();
+        //
+        //     setTimeout(function () {
+        //         createTemplate(popupData);
+        //         promise.resolve();
+        //         console.log('ajaxEmitation END');
+        //     }, 2000);
+        //
+        //     return promise.promise();
+        // };
 
         function createTemplate(content) {
             var inner = parseData(content) || 'Контент не прилетел !!!';
@@ -58,17 +58,17 @@
             localStorage.setItem('checkoutPopup', toStorage);
         };
 
-        function parseData(data) {
-            var productsInfoMarkup = '';
-            data.products.forEach(function (el, i) {
-                console.log('el,i', el, i);
-                productsInfoMarkup += '<h2>' + el.title + '</h2><h2>' + el.length + '</h2><h2>' + el.price + '</h2><h2>' + el.img + '</h2><h2>' + el.href + '</h2></br>';
-            });
-
-            console.log('productsInfoMarkup', productsInfoMarkup);
-
-            return productsInfoMarkup;
-        }
+        // function parseData(data) {
+        //     var productsInfoMarkup = '';
+        //     data.products.forEach(function (el, i) {
+        //         console.log('el,i', el, i);
+        //         productsInfoMarkup += '<h2>' + el.title + '</h2><h2>' + el.length + '</h2><h2>' + el.price + '</h2><h2>' + el.img + '</h2><h2>' + el.href + '</h2></br>';
+        //     });
+        //
+        //     console.log('productsInfoMarkup', productsInfoMarkup);
+        //
+        //     return productsInfoMarkup;
+        // }
 
         this.show = function (el) {
             self.element = el || {id: 777, length: 12};
@@ -90,7 +90,7 @@
 
     window.moyoNS = window.moyoNS || {};
     window.moyoNS.components = window.moyoNS.components || {};
-    window.moyoNS.components.CheckOutPopup = CheckOutPopup;
+    window.moyoNS.components.Popup = Popup;
 
 })(jQuery);
 

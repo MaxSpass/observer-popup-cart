@@ -1,15 +1,21 @@
-var CheckoutPopup = new window.moyoNS.components.CheckOutPopup();
+var Popup = new window.moyoNS.components.Popup({
+    contentAsync: true,
+    // contentStatic: '#popUpStaticContent',
+});
 
-// var cartInnerLink = $('.cart-inner-link');
+var CartPopup = new window.moyoNS.components.CartPopup();
 
-$('.cart-inner-link').removeAttr('href');
-// .cart-inner-link
+
+
 $(document).on('click', '#checkoutInit', function(e){
     e.preventDefault();
     e.stopPropagation();
-    CheckoutPopup.show();
+
+    Popup.buildContent(CartPopup.ajaxEmitation);
+    // Popup.buildContent();
+
+
     return false;
-    // $('#checkoutInit').trigger('click');
 });
 
 
