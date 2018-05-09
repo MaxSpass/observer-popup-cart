@@ -1,0 +1,113 @@
+/*Popup*/
+/*.popup__ready*/
+.popup__bg {
+    /*display: none;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1042;
+    overflow: hidden;
+    position: fixed;
+    background: #0b0b0b;
+    opacity: .8;
+}
+
+.popup__box {
+    /*display: none;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1043;
+    position: fixed;
+    outline: 0 !important;
+    -webkit-backface-visibility: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.popup__wrapper {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.popup__wrapper:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.popup__content {
+    width: 100%;
+    cursor: auto;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: left;
+    z-index: 1045;
+
+    background: #fff;
+    max-width: 800px;
+    padding: 20px;
+    /*margin: 20px auto;*/
+}
+
+.popup__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: red;
+    cursor: pointer;
+    float: right;
+}
+/*Checkout Popup Content*/
+#checkoutInit {
+    background: purple;
+    color: #fff;
+    padding: 15px 0;
+    margin: 0 auto;
+    max-width: 200px;
+    display: block;
+    border: 2px solid #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*.checkout-popup__box {*/
+    /*position: relative;*/
+    /*background: #fff;*/
+    /*width: 100%;*/
+    /*max-width: 800px;*/
+    /*margin: 20px auto;*/
+    /*padding: 20px;*/
+/*}*/
+
+/*.checkout-popup__box .jspDrag {*/
+    /*background: #009fff;*/
+    /*border-radius: 0;*/
+/*}*/
+
+/*.checkout-popup__box .jspVerticalBar {*/
+    /*width: 3px;*/
+/*}*/
+
+/*.checkout-popup__wrapper {*/
+    /*max-height: 50vh;*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: scroll;*/
+/*}*/
+
+/*.checkout-popup__content {*/
+    /*padding: 0 20px;*/
+/*}*/
