@@ -1,6 +1,7 @@
-var Popup = new window.moyoNS.components.Popup({
-    contentAsync: true,
-    // contentStatic: '#popUpStaticContent',
+var CheckoutPopup = new window.moyoNS.components.Popup({
+    contentAsync: false,
+    contentStatic: '#popUpStaticContent',
+    localStorage: 'checkoutPopup'
 });
 
 var CartPopup = new window.moyoNS.components.CartPopup();
@@ -11,7 +12,7 @@ $(document).on('click', '#checkoutInit', function(e){
     e.preventDefault();
     e.stopPropagation();
 
-    Popup.buildContent(CartPopup.ajaxEmitation);
+    CheckoutPopup.create(CartPopup.ajaxEmitation, false);
     // Popup.buildContent();
 
 
