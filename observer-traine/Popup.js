@@ -61,8 +61,29 @@
                 }
             }
 
-            this.create = function (callback, isFromStorage) {
-                if (self.contentAsync || self.contentStatic) {
+            function verifyMethods() {
+                var order = false;
+
+                // console.log('self', self);
+                // console.log('self.contentAsync', self.contentAsync != null);
+                // console.log('self.contentStatic', self.contentStatic != null);
+
+                if (self.contentAsync != null && self.contentStatic != null) {
+                    console.warn('Need ONE main property: contentAsync || contentStatic')
+                } else {
+                    if (self.contentAsync || self.contentStatic) {
+                        order = true;
+                    }
+                }
+
+                return order;
+            }
+
+            this.create = function (obj) {
+                var callback = obj.content;
+                var isFromStorage = obj.fromStorage;
+
+                if (verifyMethods()) {
                     if (self.contentAsync) {
                         if (callback) {
                             checkStorage(callback, isFromStorage)
@@ -71,16 +92,11 @@
                             console.warn('Function needs CALLBACK - template builder!')
                         }
                     } else if (self.contentStatic) {
-                        // console.log('self.contentStatic', self.contentStatic, $(self.contentStatic).html());
                         var content = $(self.contentStatic).html();
                         returnTemplate(content);
-                        // self.show();
                     }
-                } else {
-                    console.warn('Props: contentAsync || contentStatic is required!')
                 }
-            }
-            ;
+            };
 
 
             this.show = function (isFromStorage) {
