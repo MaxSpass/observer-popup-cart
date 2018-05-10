@@ -18,17 +18,17 @@
         console.log('CheckOutPopup');
 
         function initEvents() {
-            self.$doc.on('click', '.popup__close, .popup__wrapper', self.close);
+            self.$doc.on('click', '.popup__close', self.close);
         };
 
         function returnTemplate(content) {
 
             self.template =
-                '<div class="popup__bg"></div>' +
+                '<div class="popup__bg popup__close"></div>' +
                 '<div class="popup__box ' + self.classes.popupBox + '">' +
                 '<div class="popup__wrapper">' +
                 '<div class="popup__content ' + self.classes.popupContent + '">' + content +
-                '<div class="popup__close"></div>' +
+                '<div class="popup__close-button popup__close"><span></span></div>' +
                 '</div>' +
                 '</div>' +
                 '</div>';
@@ -59,6 +59,7 @@
         function asyncContent(callback) {
             var w = callback();
             w.done(function (content) {
+                console.log('content', content);
                 returnTemplate(content);
                 console.log('ajaxEmitation END');
             });
@@ -116,6 +117,7 @@
         this.show = function (isFromStorage) {
             // self.element = el || {id: 777, length: 12};
             var template = (isFromStorage) ? self.templateStorage : self.template;
+
             self.$html.css({'margin-right': 17, 'overflow': 'hidden'});
             self.$body.prepend(template);
         };
