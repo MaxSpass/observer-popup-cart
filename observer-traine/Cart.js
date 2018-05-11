@@ -9,7 +9,7 @@
 /*        this.template = JSON.parse(localStorage.getItem('checkoutPopup')) || null;
         this.element = null;*/
 
-        function parseData(data) {
+        this.parseData = function(data) {
             var productsInfoMarkup = '';
             var moreOneProductText = (data.products.length < 1) ? 'товаров на' : 'товар на';
 
@@ -71,9 +71,12 @@
             var template;
 
             setTimeout(function () {
-                template = parseData(randomCheckoutData());
-                defer.resolve(template);
-            }, 100);
+                template = self.parseData(randomCheckoutData());
+                var template2 = trueData();
+                console.log('template2',template2);
+                // console.log('template2', template2);
+                defer.resolve(template2);
+            }, 1000);
 
             return defer.promise();
         }

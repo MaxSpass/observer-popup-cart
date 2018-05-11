@@ -1,21 +1,15 @@
 (function ($) {
     function Popup(options) {
-
+        var self = this;
         this.config = options || {};
-        this.contentAsync = this.config.contentAsync || null;
-        this.contentStatic = this.config.contentStatic || null;
+        this.async = this.config.async || false;
         this.localStorage = this.config.localStorage || null;
         this.classes = this.config.classes || null;
-
-
-        var self = this;
         this.$doc = $(document);
         this.$html = $('html');
         this.$body = $('body');
         this.template = null;
-        this.templateStorage = JSON.parse(localStorage.getItem(this.localStorage)) || null;
-
-        console.log('CheckOutPopup');
+        this.storageData = JSON.parse(localStorage.getItem(this.localStorage)) || null;
 
         function initEvents() {
             self.$doc.on('click', '.popup__close', self.close);
@@ -23,117 +17,139 @@
 
         function returnTemplate(content) {
 
+            var popupBox = (self.classes) ? self.classes.popupBox : '';
+            var popupContent = (self.classes) ? self.classes.popupContent : '';
+
+
             self.template =
                 '<div class="popup__bg popup__close"></div>' +
-                '<div class="popup__box ' + self.classes.popupBox + '">' +
+                '<div class="popup__box ' + popupBox + '">' +
                 '<div class="popup__wrapper">' +
-                '<div class="popup__content ' + self.classes.popupContent + '">' + content +
+                '<div class="popup__content ' + popupContent + '">' + content +
                 '<div class="popup__close-button popup__close"><span></span></div>' +
                 '</div>' +
                 '</div>' +
                 '</div>';
 
-
-            if (self.localStorage) {
-                self.templateStorage = self.template;
-                var toStorage = JSON.stringify(self.template);
-                localStorage.setItem(self.localStorage, toStorage);
-            }
-
             self.show();
         };
 
-        function staticContent() {
-
-            var content;
-
-            if (typeof self.contentStatic == 'string') {
-                content = $(self.contentStatic)[0].outerHTML;
+        function staticContent(content) {
+            var inner;
+            if (content != 'undefined') {
+                if (typeof content == 'string') {
+                    // markup
+                    inner = content;
+                } else if (typeof content == 'function') {
+                    // return markup
+                    inner = content();
+                } else if (typeof content == 'object') {
+                    // jquery selector
+                    inner = $(content)[0].outerHTML;
+                } else {
+                    console.warn('Required content types: string || function || object(jquery selector)')
+                }
+                returnTemplate(inner);
+            } else {
+                console.warn('Content is undefined!')
             }
-            if (typeof self.contentStatic == 'function') {
-                content = self.contentStatic()
-            }
-            returnTemplate(content);
         }
 
-        function asyncContent(callback) {
+        function asyncContent(callback, parseStorage) {
             var w = callback();
+            var popupContent;
             w.done(function (content) {
-                console.log('content', content);
-                returnTemplate(content);
-                console.log('ajaxEmitation END');
+                if (!!parseStorage) {
+                    if (typeof parseStorage === 'function') {
+                        popupContent = parseStorage(content);
+                    } else {
+                        console.warn('parseStorage is not a FUNCTION')
+                    };
+                } else {
+                    popupContent = content;
+                }
+
+                returnTemplate(popupContent);
+                console.log('ajaxEmitation END', content);
+
+                if (self.localStorage) {
+                    localStorage.setItem(self.localStorage, JSON.stringify(content));
+                }
             });
         };
 
-        function checkStorage(callback, isFromStorage) {
-            if (isFromStorage) {
-                if (!!self.templateStorage) {
-                    self.show(isFromStorage);
+        function checkStorage(callback, parseStorage, fromStorage) {
+            if (fromStorage) {
+                console.log('self.storageData', self.storageData);
+                if (!!self.storageData) {
+                    self.template = parseStorage(self.storageData);
+                    returnTemplate(self.template);
                 } else {
-                    asyncContent(callback);
+                    asyncContent(callback, parseStorage, fromStorage);
                 }
             } else {
-                asyncContent(callback);
+                asyncContent(callback, parseStorage, fromStorage);
             }
         }
 
-        function verifyMethods() {
+        function verifyMethods(obj) {
             var isOrder = false;
 
-            // console.log('self', self);
-            // console.log('self.contentAsync', self.contentAsync != null);
-            // console.log('self.contentStatic', self.contentStatic != null);
-
-            if (self.contentAsync != null && self.contentStatic != null) {
-                console.warn('Need ONE main property: contentAsync || contentStatic')
-            } else if (self.contentAsync || self.contentStatic) {
+            if (obj.content) {
                 isOrder = true;
+            } else {
+                console.warn('Fields: CONTENT is required!')
             }
-
 
             return isOrder;
         }
 
-        this.create = function (obj) {
-            var callback = (obj) ? obj.content : null;
-            var isFromStorage = (obj) ? obj.fromStorage : null;
+        function checkDifferenceHeight() {
+            var windowHeight = $(window).height();
+            var bodyHeight = self.$body.height();
+            var order = false;
+            if (bodyHeight > windowHeight) {
+                order = true;
+            }
+            return order;
+        }
 
-            if (verifyMethods()) {
-                if (self.contentAsync) {
-                    if (callback) {
-                        checkStorage(callback, isFromStorage)
-                    }
-                    else {
-                        console.warn('Function needs CALLBACK - template builder!')
-                    }
-                } else if (self.contentStatic) {
-                    console.log('self.contentStatic', self.contentStatic);
-                    staticContent();
+        this.create = function (obj) {
+            var content = (obj.content) ? obj.content : null;
+            var parseStorage = (obj.parseStorage) ? obj.parseStorage : false;
+            var fromStorage = (obj.fromStorage) ? obj.fromStorage : false;
+
+            if (verifyMethods(obj)) {
+                if (!fromStorage) {
+                    localStorage.removeItem(self.localStorage)
+                }
+
+                if (self.async) {
+                    // Async
+                    checkStorage(content, parseStorage, fromStorage)
+                }
+                else {
+                    // Static
+                    staticContent(content)
                 }
             }
         };
 
 
-        this.show = function (isFromStorage) {
-            // self.element = el || {id: 777, length: 12};
-            var template = (isFromStorage) ? self.templateStorage : self.template;
+        this.show = function () {
+            var template = self.template;
 
-            self.$html.css({'margin-right': 17, 'overflow': 'hidden'});
+            if (checkDifferenceHeight()) {
+                self.$html.css({'margin-right': 17, 'overflow': 'hidden'});
+            }
             self.$body.prepend(template);
         };
 
         this.close = function () {
-            self.$html.removeAttr('style');
             self.$body.find('.popup__bg, .popup__box').remove();
+            self.$html.removeAttr('style');
         };
 
-        // function checkPopup(callback) {
-        //     if (!self.template) {
-        //         callback();
-        //     } else {
-        //         callback();
-        //     }
-        // };
 
         (function init() {
             initEvents();
