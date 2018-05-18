@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="697d4d71-c6ce-4c61-8190-2c0b467606b5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/Close.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/Delete.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/Minus.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/Plus.svg" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cart-popup-logic/main.js" afterPath="$PROJECT_DIR$/cart-popup-logic/main.js" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/moyo.min.css" afterPath="$PROJECT_DIR$/css/moyo.min.css" />
-      <change beforePath="$PROJECT_DIR$/new.css" afterPath="$PROJECT_DIR$/css/new.css" />
-      <change beforePath="$PROJECT_DIR$/old.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/new.css" afterPath="$PROJECT_DIR$/css/new.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +31,8 @@
       <file leaf-file-name="new.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/new.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="247">
+              <caret line="171" column="0" lean-forward="true" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,8 +51,8 @@
       <file leaf-file-name="Popup.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart-popup-logic/Popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="32" column="79" lean-forward="false" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
+            <state relative-caret-position="102">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,7 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.popup-checkout__product-col</find>
       <find>popup-checkout__product</find>
       <find>.popup-checkout__decinc_loader .loadBox:after</find>
       <find>.popup-checkout__decinc_loader .loadBox:before</find>
@@ -120,6 +110,7 @@
       <find>.popup-checkout__content</find>
       <find>.popup-checkout__button.button_redirect-data_url</find>
       <find>popup-checkout-title-summ</find>
+      <find>trash</find>
     </findStrings>
     <replaceStrings>
       <replace>returnTemplate</replace>
@@ -135,8 +126,8 @@
       <replace>10 000</replace>
       <replace>popup-checkout__price-single</replace>
       <replace>4 999</replace>
-      <replace>https://img1.moyo.ua/img/products/3828/95_200x_1509141237.jpg</replace>
       <replace>ico_trash</replace>
+      <replace>https://img1.moyo.ua/img/products/3828/95_200x_1509141237.jpg</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -283,12 +274,12 @@
       <workItem from="1526477909808" duration="6082000" />
       <workItem from="1526545113084" duration="17054000" />
       <workItem from="1526624782807" duration="6178000" />
-      <workItem from="1526652833928" duration="8049000" />
+      <workItem from="1526652833928" duration="8177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102907000" />
+    <option name="totallyTimeSpent" value="103035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -303,7 +294,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -643,14 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart-popup-logic/Popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="32" column="79" lean-forward="false" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/Plus.svg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -659,14 +642,6 @@
     <entry file="file://$PROJECT_DIR$/img/Minus.svg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-popup-logic/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/img/Delete.svg">
@@ -687,10 +662,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cart-popup-logic/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart-popup-logic/Popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/new.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="247">
+          <caret line="171" column="0" lean-forward="true" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
           <folding />
         </state>
       </provider>
