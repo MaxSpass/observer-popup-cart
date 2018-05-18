@@ -31,8 +31,8 @@
       <file leaf-file-name="new.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/new.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="171" column="0" lean-forward="true" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+            <state relative-caret-position="282">
+              <caret line="539" column="31" lean-forward="false" selection-start-line="539" selection-start-column="31" selection-end-line="539" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -100,7 +100,6 @@
       <find>f-icon-078</find>
       <find>popup-checkout__cost-info</find>
       <find>ico_close</find>
-      <find>.popup-checkout__cost-info</find>
       <find>popup-checkout-count</find>
       <find>.popup__content</find>
       <find>.popup-checkout__products</find>
@@ -111,6 +110,7 @@
       <find>.popup-checkout__button.button_redirect-data_url</find>
       <find>popup-checkout-title-summ</find>
       <find>trash</find>
+      <find>.popup-checkout__cost-info</find>
     </findStrings>
     <replaceStrings>
       <replace>returnTemplate</replace>
@@ -274,12 +274,12 @@
       <workItem from="1526477909808" duration="6082000" />
       <workItem from="1526545113084" duration="17054000" />
       <workItem from="1526624782807" duration="6178000" />
-      <workItem from="1526652833928" duration="8177000" />
+      <workItem from="1526652833928" duration="8310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103035000" />
+    <option name="totallyTimeSpent" value="103168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -680,8 +680,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/new.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="171" column="0" lean-forward="true" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+        <state relative-caret-position="282">
+          <caret line="539" column="31" lean-forward="false" selection-start-line="539" selection-start-column="31" selection-end-line="539" selection-end-column="31" />
           <folding />
         </state>
       </provider>
