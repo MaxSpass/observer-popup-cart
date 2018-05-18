@@ -20,17 +20,28 @@ var CheckoutPopupStatic = new window.moyoNS.components.Popup({
 var Cart = new window.moyoNS.components.Cart();
 
 
+function checkoutTitleDots() {
+    $('.popup-checkout__title').dotdotdot({
+        ellipsis: '... ',
+        wrap: 'letter',
+        watch: true,
+    })
+}
+
 function showCartPopup(caching) {
     CheckoutPopup.create({
         content: Cart.getCartData,
         parseStorage: Cart.parseData,
         fromStorage: caching
     });
+    checkoutTitleDots()
 }
 
 CheckoutPopup.create({
     content: $('#popUpStaticContent'),
 });
+
+checkoutTitleDots();
 
 $(document).on('click', '.one', function (e) {
     e.preventDefault();
@@ -42,7 +53,7 @@ $(document).on('click', '.one', function (e) {
     CheckoutPopup.create({
         content: $('#popUpStaticContent'),
     });
-
+    checkoutTitleDots();
     return false;
 });
 
@@ -57,7 +68,6 @@ $(document).on('click', '.two', function (e) {
 });
 
 var observer = new window.moyoNS.components.Observer();
-
 
 
 function randomCheckoutData() {

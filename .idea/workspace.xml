@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="697d4d71-c6ce-4c61-8190-2c0b467606b5" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/Close.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/Delete.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/Minus.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/Plus.svg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/checkout-popup.css" afterPath="$PROJECT_DIR$/old.css" />
-      <change beforePath="$PROJECT_DIR$/checkout-popup2.css" afterPath="$PROJECT_DIR$/new.css" />
+      <change beforePath="$PROJECT_DIR$/cart-popup-logic/main.js" afterPath="$PROJECT_DIR$/cart-popup-logic/main.js" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/observer-traine/Cart.js" afterPath="$PROJECT_DIR$/cart-popup-logic/Cart.js" />
-      <change beforePath="$PROJECT_DIR$/observer-traine/CheckoutPopup.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/observer-traine/Observer.js" afterPath="$PROJECT_DIR$/cart-popup-logic/Observer.js" />
-      <change beforePath="$PROJECT_DIR$/observer-traine/Popup.js" afterPath="$PROJECT_DIR$/cart-popup-logic/Popup.js" />
-      <change beforePath="$PROJECT_DIR$/observer-traine/shit.js" afterPath="$PROJECT_DIR$/cart-popup-logic/main.js" />
+      <change beforePath="$PROJECT_DIR$/moyo.min.css" afterPath="$PROJECT_DIR$/css/moyo.min.css" />
+      <change beforePath="$PROJECT_DIR$/new.css" afterPath="$PROJECT_DIR$/css/new.css" />
+      <change beforePath="$PROJECT_DIR$/old.css" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,26 +22,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="257" column="69" lean-forward="false" selection-start-line="257" selection-start-column="69" selection-end-line="257" selection-end-column="69" />
+            <state relative-caret-position="129">
+              <caret line="251" column="64" lean-forward="false" selection-start-line="251" selection-start-column="33" selection-end-line="251" selection-end-column="64" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1526630282507" expanded="true" signature="8558:23727" ph="..." />
+                <marker date="1526660156654" expanded="true" signature="8554:23723" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new.css">
+      <file leaf-file-name="new.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/new.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="248" column="13" lean-forward="true" selection-start-line="248" selection-start-column="13" selection-end-line="248" selection-end-column="13" />
+            <state relative-caret-position="153">
+              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -49,8 +50,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart-popup-logic/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-94">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -59,8 +60,8 @@
       <file leaf-file-name="Popup.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart-popup-logic/Popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-399">
-              <caret line="32" column="79" lean-forward="true" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
+            <state relative-caret-position="17">
+              <caret line="32" column="79" lean-forward="false" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -69,8 +70,8 @@
       <file leaf-file-name="Cart.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart-popup-logic/Cart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="170">
+              <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
                 <marker date="1526626580982" expanded="true" signature="4179:4192" ph="..." />
               </folding>
@@ -89,36 +90,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>#</find>
-      <find>popup-checkout__actions</find>
-      <find>:not</find>
-      <find>up__close-butt</find>
-      <find>&lt;div id=&quot;checkoutPopupData&quot;&gt;</find>
-      <find>popUpStaticContent</find>
-      <find>.popup-checkout__quantity:before</find>
-      <find>ckout__cost-info</find>
-      <find>p__close-button popu</find>
-      <find>alue=&quot;4&quot;</find>
-      <find>popup-checkout__decinc</find>
-      <find>21000</find>
-      <find>.popup-checkout__actions</find>
-      <find>16px 0</find>
-      <find>las</find>
+      <find>.popup-checkout__product-col</find>
+      <find>popup-checkout__product</find>
+      <find>.popup-checkout__decinc_loader .loadBox:after</find>
+      <find>.popup-checkout__decinc_loader .loadBox:before</find>
+      <find>popup-checkout__product-col</find>
+      <find>data_url</find>
+      <find>.popup-checkout__footer</find>
+      <find>checkout__cart-tex</find>
+      <find>title</find>
+      <find>popup-checkout-title-s</find>
+      <find>button_redirect-data_url</find>
+      <find>popup-checkout__content</find>
+      <find>popup-checkout__price-total</find>
+      <find>ico</find>
+      <find>semi</find>
+      <find>.popup-checkout__price-total</find>
+      <find>100500</find>
+      <find>f-icon-078</find>
       <find>popup-checkout__cost-info</find>
-      <find>.popup-checkout__product</find>
-      <find>up-checkout__cost-in</find>
-      <find>data-max-value=&quot;10&quot;</find>
-      <find>8px 0 8px 16px</find>
-      <find>.popup-checkout__remove</find>
+      <find>ico_close</find>
       <find>.popup-checkout__cost-info</find>
-      <find>.popup__close-button</find>
-      <find>out__cart-text</find>
+      <find>popup-checkout-count</find>
+      <find>.popup__content</find>
       <find>.popup-checkout__products</find>
-      <find>popup__close-button</find>
-      <find>trai</find>
-      <find>out__cart-te</find>
-      <find>.popup-checkout__decinc</find>
-      <find>-18.5px</find>
+      <find>.popup-checkout__button:not(.button_redirect-data_url)</find>
+      <find>32</find>
+      <find>.popup-checkout__product</find>
+      <find>.popup-checkout__content</find>
+      <find>.popup-checkout__button.button_redirect-data_url</find>
+      <find>popup-checkout-title-summ</find>
     </findStrings>
     <replaceStrings>
       <replace>returnTemplate</replace>
@@ -130,6 +131,12 @@
       <replace>100500</replace>
       <replace>data-max-value=&quot;99&quot;</replace>
       <replace>-19.5px</replace>
+      <replace>class=&quot;h4&quot; type=&quot;text&quot; autocomplete=&quot;off&quot; disabled=&quot;1&quot;</replace>
+      <replace>10 000</replace>
+      <replace>popup-checkout__price-single</replace>
+      <replace>4 999</replace>
+      <replace>https://img1.moyo.ua/img/products/3828/95_200x_1509141237.jpg</replace>
+      <replace>ico_trash</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -150,7 +157,9 @@
         <option value="$PROJECT_DIR$/observer-traine/Popup.js" />
         <option value="$PROJECT_DIR$/checkout-popup2.css" />
         <option value="$PROJECT_DIR$/new.css" />
+        <option value="$PROJECT_DIR$/cart-popup-logic/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/new.css" />
       </list>
     </option>
   </component>
@@ -206,7 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,12 +225,13 @@
             <path>
               <item name="moyo-cart-popup" type="b2602c69:ProjectViewProjectNode" />
               <item name="moyo-cart-popup" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cart-popup-logic" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -233,7 +242,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Max\Frontend\moyo-cart-popup\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Max\Frontend\moyo-cart-popup\img" />
       <recent name="E:\Max\Frontend\moyo-cart-popup" />
       <recent name="E:\Max\Frontend\moyo-cart-popup\observer-traine" />
     </key>
@@ -269,18 +282,19 @@
       <workItem from="1526049563334" duration="4630000" />
       <workItem from="1526477909808" duration="6082000" />
       <workItem from="1526545113084" duration="17054000" />
-      <workItem from="1526624782807" duration="5496000" />
+      <workItem from="1526624782807" duration="6178000" />
+      <workItem from="1526652833928" duration="8049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94176000" />
+    <option name="totallyTimeSpent" value="102907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2675906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27025586" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -359,38 +373,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cart-popup-logic/Observer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Observer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CheckoutPopup.js" />
     <entry file="file://$PROJECT_DIR$/checkoutCrutch.js" />
-    <entry file="file://$PROJECT_DIR$/old.css">
+    <entry file="file://$PROJECT_DIR$/css/old.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="74" column="13" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/observer-traine/CheckoutPopup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="70" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/observer-traine/CheckoutPopup.js" />
     <entry file="file://$PROJECT_DIR$/cart-popup-logic/Observer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -417,7 +408,7 @@
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1526630282507" expanded="true" signature="8558:23727" ph="..." />
+            <marker date="1526660156654" expanded="true" signature="8554:23723" ph="..." />
           </folding>
         </state>
       </provider>
@@ -438,30 +429,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Observer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Observer.js" />
     <entry file="file://$PROJECT_DIR$/CheckoutPopup.js" />
     <entry file="file://$PROJECT_DIR$/checkoutCrutch.js" />
-    <entry file="file://$PROJECT_DIR$/old.css">
+    <entry file="file://$PROJECT_DIR$/css/old.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="74" column="13" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/observer-traine/CheckoutPopup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="70" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/observer-traine/CheckoutPopup.js" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -470,7 +448,7 @@
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1526630282507" expanded="true" signature="8558:23727" ph="..." />
+            <marker date="1526660156654" expanded="true" signature="8554:23723" ph="..." />
           </folding>
         </state>
       </provider>
@@ -517,7 +495,7 @@
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1526630282507" expanded="true" signature="8558:23727" ph="..." />
+            <marker date="1526660156654" expanded="true" signature="8554:23723" ph="..." />
           </folding>
         </state>
       </provider>
@@ -548,18 +526,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/observer-traine/CheckoutPopup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="70" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old.css">
+    <entry file="file://$PROJECT_DIR$/observer-traine/CheckoutPopup.js" />
+    <entry file="file://$PROJECT_DIR$/css/old.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="74" column="13" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -571,30 +542,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Observer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Observer.js" />
     <entry file="file://$PROJECT_DIR$/CheckoutPopup.js" />
     <entry file="file://$PROJECT_DIR$/checkoutCrutch.js" />
-    <entry file="file://$PROJECT_DIR$/old.css">
+    <entry file="file://$PROJECT_DIR$/css/old.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="74" column="13" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/observer-traine/CheckoutPopup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="70" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/observer-traine/CheckoutPopup.js" />
     <entry file="file://$PROJECT_DIR$/cart-popup-logic/Observer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -621,7 +579,7 @@
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1526630282507" expanded="true" signature="8558:23727" ph="..." />
+            <marker date="1526660156654" expanded="true" signature="8554:23723" ph="..." />
           </folding>
         </state>
       </provider>
@@ -651,21 +609,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/moyo.min.css">
+    <entry file="file://$PROJECT_DIR$/css/moyo.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Observer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Observer.js" />
     <entry file="file://$PROJECT_DIR$/cart-popup-logic/Observer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -674,66 +625,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart-popup-logic/Popup.js">
+    <entry file="file://$PROJECT_DIR$/observer-traine/CheckoutPopup.js" />
+    <entry file="file://$PROJECT_DIR$/css/old.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="32" column="79" lean-forward="true" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-popup-logic/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/observer-traine/CheckoutPopup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="401">
+          <caret line="398" column="5" lean-forward="false" selection-start-line="398" selection-start-column="5" selection-end-line="398" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cart-popup-logic/Cart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="170">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
             <marker date="1526626580982" expanded="true" signature="4179:4192" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/old.css">
+    <entry file="file://$PROJECT_DIR$/cart-popup-logic/Popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="398" column="5" lean-forward="false" selection-start-line="398" selection-start-column="5" selection-end-line="398" selection-end-column="5" />
+        <state relative-caret-position="17">
+          <caret line="32" column="79" lean-forward="false" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new.css">
+    <entry file="file://$PROJECT_DIR$/img/Plus.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/Minus.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart-popup-logic/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="248" column="13" lean-forward="true" selection-start-line="248" selection-start-column="13" selection-end-line="248" selection-end-column="13" />
+        <state relative-caret-position="374">
+          <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/Delete.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="257" column="69" lean-forward="false" selection-start-line="257" selection-start-column="69" selection-end-line="257" selection-end-column="69" />
+        <state relative-caret-position="129">
+          <caret line="251" column="64" lean-forward="false" selection-start-line="251" selection-start-column="33" selection-end-line="251" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1526630282507" expanded="true" signature="8558:23727" ph="..." />
+            <marker date="1526660156654" expanded="true" signature="8554:23723" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/new.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
