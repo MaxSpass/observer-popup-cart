@@ -13,6 +13,11 @@
 
         function initEvents() {
             self.$doc.on('click', '.popup__close', self.close);
+            self.$doc.on('click', '.popup__wrapper', function(e){
+                if($(e.target).hasClass('popup__wrapper')) {
+                    self.close()
+                }
+            })
         };
 
         function returnTemplate(content) {
@@ -26,7 +31,7 @@
                 '<div class="popup__box ' + popupBox + '">' +
                 '<div class="popup__wrapper">' +
                 '<div class="popup__content ' + popupContent + '">' + content +
-                '<div class="popup__close-button popup__close"><span></span></div>' +
+                '<div class="popup__close-button popup__close ico ico_close"></div>' +
                 '</div>' +
                 '</div>' +
                 '</div>';
@@ -55,10 +60,12 @@
             }
         }
 
-        function asyncContent(callback, parseStorage) {
-            var w = callback();
+        function asyncContent(callback, arguments, parseStorage) {
+
+            var asyncAwait = (arguments) ? callback(arguments) : callback();
             var popupContent;
-            w.done(function (content) {
+
+            asyncAwait.done(function (content) {
                 if (!!parseStorage) {
                     if (typeof parseStorage === 'function') {
                         popupContent = parseStorage(content);
@@ -70,25 +77,25 @@
                 }
 
                 returnTemplate(popupContent);
-                console.log('ajaxEmitation END', content);
+                console.log('getCartInfo END');
 
-                if (self.localStorage) {
+                if (!!self.localStorage) {
                     localStorage.setItem(self.localStorage, JSON.stringify(content));
                 }
             });
         };
 
-        function checkStorage(callback, parseStorage, fromStorage) {
+        function checkStorage(callback, arguments, parseStorage, fromStorage) {
+            var storage = localStorage.getItem(self.localStorage);
             if (fromStorage) {
-                console.log('self.storageData', self.storageData);
-                if (!!self.storageData) {
-                    self.template = parseStorage(self.storageData);
+                if (!!self.storageData && !!storage) {
+                    self.template = parseStorage(JSON.parse(storage));
                     returnTemplate(self.template);
                 } else {
-                    asyncContent(callback, parseStorage, fromStorage);
+                    asyncContent(callback, arguments, parseStorage);
                 }
             } else {
-                asyncContent(callback, parseStorage, fromStorage);
+                asyncContent(callback, arguments, parseStorage);
             }
         }
 
@@ -115,6 +122,7 @@
         }
 
         this.create = function (obj) {
+            var arguments = (obj.arguments) ? obj.arguments : null;
             var content = (obj.content) ? obj.content : null;
             var parseStorage = (obj.parseStorage) ? obj.parseStorage : false;
             var fromStorage = (obj.fromStorage) ? obj.fromStorage : false;
@@ -126,11 +134,11 @@
 
                 if (self.async) {
                     // Async
-                    checkStorage(content, parseStorage, fromStorage)
+                    checkStorage(content, arguments, parseStorage, fromStorage)
                 }
                 else {
                     // Static
-                    staticContent(content)
+                    staticContent(content, arguments)
                 }
             }
         };
@@ -140,14 +148,14 @@
             var template = self.template;
 
             if (checkDifferenceHeight()) {
-                self.$html.css({'margin-right': 17, 'overflow': 'hidden'});
+                self.$body.css({'margin-right': 17, 'overflow': 'hidden'});
             }
             self.$body.prepend(template);
         };
 
         this.close = function () {
             self.$body.find('.popup__bg, .popup__box').remove();
-            self.$html.removeAttr('style');
+            self.$body.removeAttr('style');
         };
 
 
