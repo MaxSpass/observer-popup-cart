@@ -86,7 +86,7 @@
     text-align: left;
     background: #fff;
     padding: 20px;
-    margin: 10vh auto 20px auto;
+    margin: 4vw auto 20px auto;
     z-index: 1045;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -130,13 +130,13 @@
     margin-bottom: 0;
 }
 .popup-checkout__content .h1 {
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 .popup-checkout__content .h2 {
-    font-size: 1.25em;
+    font-size: 1.2em;
 }
 .popup-checkout__content .h3 {
-    font-size: 1.1em;
+    font-size: 1.05em;
 }
 .popup-checkout__content .h4 {
     font-size: 0.9em;
@@ -161,7 +161,7 @@
 .popup-checkout__cost-info {
     display: flex;
     justify-content: space-between;
-    margin: 16px 0 16px 16px;
+    margin: 16px 0;
 }
 
 .popup-checkout__price-total {
@@ -198,7 +198,7 @@
 .popup-checkout__product-col.left {
     position: relative;
     width: 110px;
-    min-width: 110px;
+    /*min-width: 110px;*/
     margin-right: 8px;
 }
 
@@ -233,7 +233,7 @@
 }
 .popup-checkout__info .popup-checkout__title {
     max-width: 500px;
-    padding-right: 25px;
+    padding-right: 20px;
     line-height: 1.2;
 }
 
@@ -245,7 +245,7 @@
 
 .popup-checkout__quantity:before {
     position: absolute;
-    right: -18.5px;
+    right: -19.5px;
     top: 50%;
     transform: translateY(-50%);
     line-height: .8;
@@ -280,7 +280,7 @@
     height: 40px;
     border: 1px solid #e4e4e4;
     border-radius: 1px;
-    margin-right: 20px;
+    margin-right: 12px;
 }
 
 .popup-checkout__decinc a {
@@ -407,13 +407,14 @@
 }
 
 .popup-checkout__button.button_redirect-data_url {
-    min-width: 200px;
+    min-width: 240px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-popup-checkout__cart-text {
-
+.popup-checkout__cart-text {
+    position: relative;
+    z-index: 2;
 }
 
 .popup-checkout__empty-text {
@@ -429,9 +430,9 @@ popup-checkout__cart-text {
 .cart_href .header-cart-dropdown {
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .popup-checkout__content {
-        font-size: 85%;
+@media screen and (max-width: 991px) {
+    .popup-checkout__products {
+        margin-top: 10px;
     }
 }
 
@@ -439,10 +440,8 @@ popup-checkout__cart-text {
     .popup-checkout__content {
         font-size: 95%;
     }
-    .popup-checkout__products {
-        margin-top: 15px;
-    }
     .popup__close-button {
+        top: 0px;
         right: -3px;
     }
     .popup-checkout__content {
@@ -479,7 +478,7 @@ popup-checkout__cart-text {
     }
     .button_redirect-data_url {
         width: 100%;
-        max-width: 460px;
+        /*max-width: 460px;*/
     }
     .popup-checkout__footer {
         padding-left: 0;
@@ -497,7 +496,7 @@ popup-checkout__cart-text {
         height: 35px;
     }
     .popup-checkout__content {
-        font-size: 78%;
+        font-size: 82%;
     }
     .popup-checkout__cost-info {
         padding-left: 0px;
